@@ -7,7 +7,7 @@ import {
   HashLocationStrategy
 } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -17,8 +17,6 @@ import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 
 
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 
 import { Approutes } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,14 +37,13 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   declarations: [
     AppComponent,
     SpinnerComponent,
-    BreadcrumbComponent,
-    SidebarComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     NgbModule.forRoot(),
     SlimLoadingBarModule.forRoot(),

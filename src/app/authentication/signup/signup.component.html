@@ -8,25 +8,25 @@
             <!-- Form -->
             <div class="row">
                 <div class="col-12">
-                    <form class="form-horizontal m-t-20" action="index.html">
+                    <form class="form-horizontal m-t-20" action="index.html" [formGroup]="SignupData">
                         <div class="form-group row ">
                             <div class="col-12 ">
-                                <input class="form-control form-control-lg" type="text" required=" " placeholder="Name">
+                                <input formControlName="name" class="form-control form-control-lg" type="text" required=" " placeholder="Name">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12 ">
-                                <input class="form-control form-control-lg" type="text" required=" " placeholder="Email">
+                                <input formControlName="email" class="form-control form-control-lg" type="text" required=" " placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12 ">
-                                <input class="form-control form-control-lg" type="password" required=" " placeholder="Password">
+                                <input formControlName="password" class="form-control form-control-lg" type="password" required=" " placeholder="Password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <div class="col-12 ">
-                                <input class="form-control form-control-lg" type="password" required=" " placeholder="Confirm Password">
+                                <input formControlName="confirm" class="form-control form-control-lg" type="password" required=" " placeholder="Confirm Password">
                             </div>
                         </div>
                         <div class="form-group row">
