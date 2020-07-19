@@ -35,7 +35,7 @@
     "d3": "^4.8.0",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.19",
     "ng-chartist": "^1.1.1",
     "ng-multiselect-dropdown": "^0.2.3",
     "ng2-charts": "^1.6.0",
